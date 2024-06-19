@@ -1,4 +1,4 @@
-import axios from "axios"
+kimport axios from "axios"
 import loginImage from '../images/login image.png'
 import React, { useState } from "react";
 import { Link,  useNavigate } from "react-router-dom";
@@ -45,7 +45,7 @@ function LoginPage() {
       
       
       const {data} =  await axios.post("api/user/login/",{email, password});
-      //console.log(data);
+      console.log(data);
       if(data.loggedIn){
         localStorage.setItem("userInfo", JSON.stringify(data));
         navigate("/chats");
@@ -58,7 +58,7 @@ function LoginPage() {
       }
       
     } catch (error) {
-      // console.log(error);
+      console.log(error);
     }
     
 
