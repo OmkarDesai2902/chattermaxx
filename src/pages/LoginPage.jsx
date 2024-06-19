@@ -1,4 +1,4 @@
-kimport axios from "axios"
+import axios from "axios"
 import loginImage from '../images/login image.png'
 import React, { useState } from "react";
 import { Link,  useNavigate } from "react-router-dom";
