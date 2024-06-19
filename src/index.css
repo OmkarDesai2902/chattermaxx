@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --selectedChatBG : 'linear-gradient(109.6deg, rgb(229, 68, 121) 11.2%, rgb(157, 55, 206) 91.2%);';
+    --selectedChatText : '#';
+
+}
+body {
+    background-color: #09090B; 
+    color : #09090B; 
+}
+
+.search{
+    /* border: 1px solid #c4c4c4; */
+    border: 2px solid  rgb(107 114 128 / 0.45);;
+    width: 92%;
+    overflow-x: hidden;
+    display: flex;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 8px 10px 8px 10px;
+}
+
+.search input {
+    width: 90%;
+    padding-left: 6px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #ffffff;
+}
+.search  input:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+.search .button-src{
+    padding-top: 5px;  
+}
+.search .button-src button{
+    padding: 5px ;
+    padding-right: 8px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.search .button-src button img {
+    width: 18px;
+}
+
+.dropdown-btn :focus{
+    outline: none;
+}
+.selected-chat{
+    /* border-radius: 6px; */
+    /* margin: 0 8px 0 8px;
+    padding-left: 12px; */
+    /* background-color: #ecebeb; */
+    /* background-color: #FFF; */
+    /* color: #09090B; */
+    /* background: linear-gradient(109.6deg, rgb(229, 68, 121) 11.2%, rgb(157, 55, 206) 91.2%); */
+    /* background: linear-gradient(109.6deg, rgb(229, 68, 121) 11.2%, rgb(157, 55, 206) 91.2%); */
+    background: rgb(46,127,253);
+    background: linear-gradient(115deg, rgba(46,127,253,1) 26%, rgba(48,113,253,1) 44%, rgba(40,94,255,1) 75%);
+
+}
+
+.chat-on-left .chat-on-left-div{
+    /* background: rgb(255,98,163);
+    background: linear-gradient(38deg, rgba(255,98,163,1) 0%, rgba(238,42,123,1) 29%, rgba(167,17,186,1) 60%, rgba(112,37,182,1) 100%); color: #FFF; */
+    background-color: rgb(107 114 128 / 0.45);
+
+}
+
+.chat-on-right .chat-on-right-div{
+    background: rgb(46,127,253);
+    background: linear-gradient(115deg, rgba(46,127,253,1) 26%, rgba(48,113,253,1) 44%, rgba(40,94,255,1) 75%);
+
+
+}
+.gradient-blue{
+    background: rgb(46,127,253);
+    background: linear-gradient(115deg, rgba(46,127,253,1) 26%, rgba(48,113,253,1) 44%, rgba(40,94,255,1) 75%);
+
+
+}
