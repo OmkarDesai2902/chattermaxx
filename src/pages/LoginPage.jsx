@@ -44,7 +44,7 @@ function LoginPage() {
     try {
       
       
-      const {data} =  await axios.post("api/user/login/",{email, password});
+      const {data} =  await axios.post("https://chattermaxx-server.onrender.com/api/user/login/",{email, password});
       console.log(data);
       if(data.loggedIn){
         localStorage.setItem("userInfo", JSON.stringify(data));
