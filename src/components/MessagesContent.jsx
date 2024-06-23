@@ -414,9 +414,9 @@ const MessagesContent = () => {
         
         <div className='h-[80vh] '>
             {/* <p>{messageCursor}</p>
-            <p>{selectedChatID}</p> */}
+            <p>{selectedChatID}</p> 
             <p className='text-white' >{selectedChatID}</p>
-            <p className='text-white'>{chatUsersInfo.chatId}</p>
+            <p className='text-white'>{chatUsersInfo.chatId}</p> */}
             {/* <ScrollableFeed style={{height:'70px'}} onScroll={(event)=> handleScroll(event)}> */}
                 <div id='scrollable-div' style={{"maxHeight": "inherit", "height": "inherit", "overflowY": "auto"}}
                 onScroll={handleScroll} className='p-4 pb-14 bg-themecolor'
