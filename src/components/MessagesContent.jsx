@@ -258,7 +258,7 @@ const MessagesContent = () => {
                 }
             }
            
-            let {data : messageData} =  await axios.get(`api/messages/${selectedChatID}&${messageCursor}`,config);
+            let {data : messageData} =  await axios.get(`https://chattermaxx-server.onrender.com/api/messages/${selectedChatID}&${messageCursor}`,config);
             setMessagesProgess(30)
             if (messageData.nextCursor === 'Reached End') {
                 setReachedEnd(true)
