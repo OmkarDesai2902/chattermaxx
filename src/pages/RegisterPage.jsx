@@ -33,7 +33,7 @@ function RegisterPage() {
     e.preventDefault();
     const {name, email, password} = formData;
     try {
-      const {data} = await axios.post("api/user/register",{name, email, password});
+      const {data} = await axios.post("https://chattermaxx-server.onrender.com/api/user/register",{name, email, password});
       if(data.status ==='Success'){
         window.alert('Registered Successfully');
         navigate('/login');
