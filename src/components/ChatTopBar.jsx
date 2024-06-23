@@ -44,7 +44,7 @@ const ChatTopBar = () => {
           }
       }
       
-      let {data : usersData} =  await axios.post("api/user/",{searchTerm} ,config);
+      let {data : usersData} =  await axios.post("https://chattermaxx-server.onrender.com/api/user/",{searchTerm} ,config);
       setSearchResults(usersData.data)
     }
     catch(error){
@@ -151,7 +151,7 @@ const ChatTopBar = () => {
 
     
 
-    let {data : usersData} =  await axios.post("api/chats/",
+    let {data : usersData} =  await axios.post("https://chattermaxx-server.onrender.com/api/chats/",
       {
         users:users,
         isGroupChat :  'TRUE',
@@ -189,7 +189,7 @@ const ChatTopBar = () => {
     let users = []
     users.push(id)
     
-    let {data : usersData} =  await axios.post("api/chats/",
+    let {data : usersData} =  await axios.post("https://chattermaxx-server.onrender.com/api/chats/",
       {
         users:users,
         isGroupChat :  'FALSE',
