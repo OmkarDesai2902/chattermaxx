@@ -36,7 +36,7 @@ export const ChatProvider = ({children}) => {
     //let socket = io("http://localhost:8000")
     const [socket,setSocket] = useState()
     useEffect(()=>{
-      const _socket = io(process.env.SERVERURL);
+      const _socket = io("https://chattermaxx-server.onrender.com");
       setSocket(_socket);
 
       return ()=>{
