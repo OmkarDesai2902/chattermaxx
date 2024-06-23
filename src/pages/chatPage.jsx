@@ -26,7 +26,7 @@ const ChatPage = () => {
                     }
                 }
                 // const {data} =  await axios.post("api/chats/check/",{token},config);
-                const {data} =  await axios.get("api/chats/check/",config);
+                const {data} =  await axios.get("https://chattermaxx-server.onrender.com/api/chats/check/",config);
                 if(data.status === 'Failure' || data ==='Request not authorized'){
                     localStorage.clear();
                     window.alert('Make sure you have Logged in!');
