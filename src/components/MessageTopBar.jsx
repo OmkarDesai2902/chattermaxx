@@ -72,7 +72,7 @@ const MessageTopBar = () => {
         groupName : groupName
       }
       
-      let {data : groupData} =  await axios.patch("api/chats/rename",jsonData ,config);
+      let {data : groupData} =  await axios.patch("https://chattermaxx-server.onrender.com/api/chats/rename",jsonData ,config);
       
       //console.log(groupData)
     }
@@ -102,7 +102,7 @@ const MessageTopBar = () => {
     }
     
     let chatId = chatUsersInfo.chatId;
-    let {data : usersData} =  await axios.patch("api/chats",{chatId,users} ,config);
+    let {data : usersData} =  await axios.patch("https://chattermaxx-server.onrender.com/api/chats",{chatId,users} ,config);
     
     //console.log(usersData.updateChatDetails.id)
     //console.log(usersData.updateChatDetails.users.user)
@@ -189,7 +189,7 @@ const MessageTopBar = () => {
           }
       }
       let groupID = chatUsersInfo.chatId;
-      let {data : usersData} =  await axios.post("api/user/excludedgrp",{searchTerm,groupID} ,config);
+      let {data : usersData} =  await axios.post("https://chattermaxx-server.onrender.com/api/user/excludedgrp",{searchTerm,groupID} ,config);
       setSearchResults(usersData.data)
       //console.log(searchResults)
     }
