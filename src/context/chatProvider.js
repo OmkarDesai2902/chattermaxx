@@ -62,7 +62,7 @@ export const ChatProvider = ({children}) => {
                 Authorization : AuthHeader, 
             }
         }
-        let {data : chatsData} =  await axios.get("api/chats/",config);
+        let {data : chatsData} =  await axios.get("https://chattermaxx-server.onrender.com/api/chats/",config);
         setProfileInfo({name : chatsData.loggedInUser, id : chatsData.loggedInUserID});
         setChats(chatsData.finalResponse);
         // console.log(chatsData)
